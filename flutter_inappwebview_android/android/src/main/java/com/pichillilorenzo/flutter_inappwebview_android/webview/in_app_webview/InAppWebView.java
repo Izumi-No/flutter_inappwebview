@@ -429,7 +429,7 @@ final public class InAppWebView extends InputAwareWebView implements InAppWebVie
       if (customSettings.hardwareAcceleration)
         setLayerType(View.LAYER_TYPE_HARDWARE, null);
       else
-        setLayerType(View.LAYER_TYPE_NONE, null);
+        setLayerType(View.LAYER_TYPE_SOFTWARE, null);
     }
     setScrollBarStyle(customSettings.scrollBarStyle);
     if (customSettings.scrollBarDefaultDelayBeforeFade != null) {
@@ -1106,7 +1106,7 @@ final public class InAppWebView extends InputAwareWebView implements InAppWebVie
         if (newCustomSettings.hardwareAcceleration)
           setLayerType(View.LAYER_TYPE_HARDWARE, null);
         else
-          setLayerType(View.LAYER_TYPE_NONE, null);
+          setLayerType(View.LAYER_TYPE_SOFTWARE, null);
       }
     }
 
